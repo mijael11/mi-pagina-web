@@ -1,25 +1,22 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f5f5f5;
+    background: #f4f4f4;
 }
 
-/* Barra superior */
 .topbar {
     background: #000;
     color: white;
+    padding: 8px;
     text-align: center;
-    padding: 8px 0;
-    font-size: 14px;
 }
 
-/* Header */
 .header {
     background: #111;
     color: white;
+    padding: 12px;
     display: flex;
     align-items: center;
-    padding: 10px 15px;
     justify-content: space-between;
 }
 
@@ -28,102 +25,63 @@ body {
     cursor: pointer;
 }
 
-.logo {
-    text-align: center;
+.logo h1 {
+    margin: 0;
 }
 
-.logo span {
-    font-size: 22px;
-    font-weight: bold;
-}
-
-.logo small {
-    display: block;
-    font-size: 12px;
-    color: #ddd;
-}
-
-.cart-icon {
-    font-size: 24px;
-    cursor: pointer;
-}
-
-/* Search */
-.search-bar {
-    display: flex;
-    padding: 10px;
-    background: #fff;
-    gap: 5px;
-}
-
-.search-bar select,
-.search-bar input {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-}
-
-.search-bar button {
-    background: #00a000;
+#sidebar {
+    width: 240px;
+    height: 100%;
+    background: #222;
     color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-}
-
-/* Banner */
-.banner {
-    background: linear-gradient(to bottom, #005bb5, #0070d3);
-    color: white;
-    text-align: center;
-    padding: 30px 10px;
-}
-
-.filter-btn {
-    background: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 10px;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.sort {
-    margin-top: 15px;
-}
-
-.sort select {
-    padding: 8px;
-}
-
-/* Intro */
-.intro {
     padding: 20px;
-    text-align: center;
-    font-weight: bold;
-    color: #008000;
+    position: fixed;
+    left: -260px;
+    top: 0;
+    transition: 0.3s;
 }
 
-/* Productos */
-.productos {
+#sidebar a {
+    color: white;
+    display: block;
+    padding: 10px 0;
+}
+
+.search-section {
+    display: flex;
+    gap: 5px;
+    padding: 15px;
+    background: #fff;
+}
+
+.banner {
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+.azul {
+    background: linear-gradient(to bottom, #0060c7, #007eef);
+}
+
+.productos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
     padding: 20px;
 }
 
-.producto {
-    background: #fff;
+.producto-card {
+    background: white;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 12px;
     box-shadow: 0 0 10px #00000020;
     text-align: center;
 }
 
-.producto img {
+.producto-card img {
     width: 100%;
-    height: 180px;
-    object-fit: cover;
+    border-radius: 10px;
 }
 
 .precio {
@@ -132,24 +90,31 @@ body {
     font-weight: bold;
 }
 
-/* WhatsApp */
-.whatsapp-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
+.btn {
+    background: #0a7e0a;
+    padding: 10px;
     color: white;
-    padding: 12px 18px;
-    border-radius: 50px;
-    font-size: 16px;
     text-decoration: none;
-    box-shadow: 0px 4px 12px #00000050;
+    display: block;
+    margin-top: 10px;
+    border-radius: 6px;
 }
 
-/* Footer */
+.whatsapp {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #25D366;
+    padding: 15px;
+    border-radius: 100px;
+    box-shadow: 0 0 10px #00000040;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+
 footer {
     text-align: center;
     padding: 20px;
-    font-size: 14px;
-    color: #333;
+    color: #555;
 }
