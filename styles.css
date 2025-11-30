@@ -1,0 +1,42 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Encabezado */
+header {
+    background-color: #1e88e5;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+/* Contenido principal */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px #00000020;
+    border-radius: 8px;
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+/* Lista de proyectos */
+ul {
+    padding-left: 20px;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+    margin: 20px 0;
+}
