@@ -2,81 +2,196 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi página web sencilla</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Aquí conectaremos el CSS -->
+    <title>Mi Tienda</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a mi página</h1>
-        <p>Esta es una web sencilla creada por mí.</p>
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1>Mi Tienda Online</h1>
+        <p>Productos variados al mejor precio</p>
     </header>
 
-    <main>
-        <section>
-            <h2>Sobre mí</h2>
-            <p>
-                Aquí puedes escribir una breve descripción sobre ti,
-                tus estudios, proyectos o lo que quieras mostrar.
-            </p>
-        </section>
+    <!-- GRID DE PRODUCTOS -->
+    <section class="productos">
+        <h2>Productos en venta</h2>
 
-        <section>
-            <h2>Mis proyectos</h2>
-            <ul>
-                <li>Proyecto 1</li>
-                <li>Proyecto 2</li>
-                <li>Proyecto 3</li>
-            </ul>
-        </section>
-    </main>
-<section style="margin-top: 60px; display: flex; justify-content: center;">
-    <div style="
-        max-width: 350px; 
-        border: 1px solid #ddd; 
-        border-radius: 12px; 
-        padding: 20px; 
-        background: #fff; 
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        text-align: center;
-    ">
-        <h2 style="margin-bottom: 20px;">Zapatilla en venta</h2>
+        <div class="grid">
 
-        <img src="Captura de pantalla 2025-11-30 112059.png" 
-             alt="Adidas Hoops 3.0 Green" 
-             style="width: 100%; border-radius: 10px; margin-bottom: 15px;">
+            <!-- 14 PRODUCTOS IGUALES -->
+            <!-- Puedes duplicar o cambiar cualquiera después -->
 
-        <h3 style="margin: 10px 0 5px; font-size: 20px;">Adidas Hoops 3.0 Green</h3>
-        <p style="margin: 0; font-size: 22px; font-weight: bold; color: #1e88e5;">
-            S/ 239.00
-        </p>
+            <!-- PRODUCTO 1 -->
+            <!-- Usa producto.png como imagen -->
+            <!-- Cambia el nombre o precio cuando quieras -->
+            <!-- Repite para los 14 -->
 
-        <button onclick="window.location.href='https://wa.me/51999999999?text=Hola,%20estoy%20interesado%20en%20la%20zapatilla%20Adidas%20Hoops%203.0%20Green.'" 
-            style="
-            margin-top: 20px; 
-            width: 100%; 
-            padding: 12px; 
-            background: #1e88e5; 
-            color: white; 
-            border: none; 
-            border-radius: 6px; 
-            font-size: 16px;
-            cursor: pointer;
-            transition: 0.2s;
-        "
-        onmouseover="this.style.background='#1565c0'"
-        onmouseout="this.style.background='#1e88e5'">
-            Comprar por WhatsApp
-        </button>
-    </div>
-</section>
+            <!-- Se generan automáticamente con un bucle manual -->
 
+            <!-- Generación de los 14 productos -->
+            <!-- PRODUCTOS -->
+            <!-- Voy a generar 14 cards con mismo contenido -->
 
-    <footer>
-        <p>© 2025 Mi página web</p>
+            <!-- Producto Loop -->
+            <!-- Producto 1 al 14 -->
+            <!-- Basta duplicarlos si quieres más -->
+            <!-- Puedes editar nombres luego -->
+
+            <!-- PRODUCT CARD TEMPLATE -->
+            <!-- (Solo cambia el nombre DETRÁS si quieres) -->
+            <!-- Empieza el bloque de 14 -->
+
+            <!-- Product 1 -->
+            <div class="card">
+                <img src="producto.png" alt="Producto">
+                <h3>Producto 1</h3>
+                <p class="precio">S/ 239.00</p>
+                <button onclick="window.location.href='https://wa.me/51999999999?text=Hola,%20estoy%20interesado%20en%20el%20Producto%201.'">
+                    Comprar por WhatsApp
+                </button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="card">
+                <img src="producto.png" alt="Producto">
+                <h3>Producto 2</h3>
+                <p class="precio">S/ 239.00</p>
+                <button onclick="window.location.href='https://wa.me/51999999999?text=Hola,%20estoy%20interesado%20en%20el%20Producto%202.'">
+                    Comprar por WhatsApp
+                </button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="card">
+                <img src="producto.png" alt="Producto">
+                <h3>Producto 3</h3>
+                <p class="precio">S/ 239.00</p>
+                <button onclick="window.location.href='https://wa.me/51999999999?text=Hola,%20estoy%20interesado%20en%20el%20Producto%203.'">
+                    Comprar por WhatsApp
+                </button>
+            </div>
+
+            <!-- Y así hasta el 14 -->
+
+            <!-- Product 4 -->
+            <div class="card">
+                <img src="producto.png" alt="Producto">
+                <h3>Producto 4</h3>
+                <p class="precio">S/ 239.00</p>
+                <button onclick="window.location.href='https://wa.me/51999999999?text=Hola,%20estoy%20interesado%20en%20el%20Producto%204.'">
+                    Comprar por WhatsApp
+                </button>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="card">
+                <img src="producto.png" alt="Producto">
+                <h3>Producto 5</h3>
+                <p class="precio">S/ 239.00</p>
+                <button onclick="window.location.href='https://wa.me/51999999999?text=Hola,%20estoy%20interesado%20en%20el%20Producto%205.'">
+                    Comprar por WhatsApp
+                </button>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="card">
+                <img src="producto.png" alt="Producto">
+                <h3>Producto 6</h3>
+                <p class="precio">S/ 239.00</p>
+                <button onclick="window.location.href='https://wa.me/51999999999?text=Hola,%20estoy%20interesado%20en%20el%20Producto%206.'">
+                    Comprar por WhatsApp
+                </button>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="card">
+                <img src="producto.png" alt="Producto">
+                <h3>Producto 7</h3>
+                <p class="precio">S/ 239.00</p>
+                <button onclick="window.location.href='https://wa.me/51999999999?text=Hola,%20estoy%20interesado%20en%20el%20Producto%207.'">
+                    Comprar por WhatsApp
+                </button>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="card">
+                <img src="producto.png" alt="Producto">
+                <h3>Producto 8</h3>
+                <p class="precio">S/ 239.00</p>
+                <button onclick="window.location.href='https://wa.me/51999999999?text=Hola,%20estoy%20interesado%20en%20el%20Producto%208.'">
+                    Comprar por WhatsApp
+                </button>
+            </div>
+
+            <!-- Product 9 -->
+            <div class="card">
+                <img src="producto.png" alt="Producto">
+                <h3>Producto 9</h3>
+                <p class="precio">S/ 239.00</p>
+                <button onclick="window.location.href='https://wa.me/51999999999?text=Hola,%20estoy%20interesado%20en%20el%20Producto%209.'">
+                    Comprar por WhatsApp
+                </button>
+            </div>
+
+            <!-- Product 10 -->
+            <div class="card">
+                <img src="producto.png" alt="Producto">
+                <h3>Producto 10</h3>
+                <p class="precio">S/ 239.00</p>
+                <button onclick="window.location.href='https://wa.me/51999999999?text=Hola,%20estoy%20interesado%20en%20el%20Producto%2010.'">
+                    Comprar por WhatsApp
+                </button>
+            </div>
+
+            <!-- Product 11 -->
+            <div class="card">
+                <img src="producto.png" alt="Producto">
+                <h3>Producto 11</h3>
+                <p class="precio">S/ 239.00</p>
+                <button onclick="window.location.href='https://wa.me/51999999999?text=Hola,%20estoy%20interesado%20en%20el%20Producto%2011.'">
+                    Comprar por WhatsApp
+                </button>
+            </div>
+
+            <!-- Product 12 -->
+            <div class="card">
+                <img src="producto.png" alt="Producto">
+                <h3>Producto 12</h3>
+                <p class="precio">S/ 239.00</p>
+                <button onclick="window.location.href='https://wa.me/51999999999?text=Hola,%20estoy%20interesado%20en%20el%20Producto%2012.'">
+                    Comprar por WhatsApp
+                </button>
+            </div>
+
+            <!-- Product 13 -->
+            <div class="card">
+                <img src="producto.png" alt="Producto">
+                <h3>Producto 13</h3>
+                <p class="precio">S/ 239.00</p>
+                <button onclick="window.location.href='https://wa.me/51999999999?text=Hola,%20estoy%20interesado%20en%20el%20Producto%2013.'">
+                    Comprar por WhatsApp
+                </button>
+            </div>
+
+            <!-- Product 14 -->
+            <div class="card">
+                <img src="producto.png" alt="Producto">
+                <h3>Producto 14</h3>
+                <p class="precio">S/ 239.00</p>
+                <button onclick="window.location.href='https://wa.me/51999999999?text=Hola,%20estoy%20interesado%20en%20el%20Producto%2014.'">
+                    Comprar por WhatsApp
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        © 2025 Mi Tienda Online
     </footer>
+
 </body>
 </html>
-
-
