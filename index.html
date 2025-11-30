@@ -3,103 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Zapatillas</title>
+    <title>Mi Tienda Pro</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <!-- Barra superior -->
+    <!-- TOPBAR -->
     <div class="topbar">
-        BIENVENIDOS A ZAPATINET
+        BIENVENIDO A MI TIENDA PREMIUM
     </div>
 
-    <!-- Header con logo y menú -->
+    <!-- HEADER -->
     <header class="header">
-        <div class="menu-btn">&#9776;</div>
+        <div class="menu-btn" onclick="toggleMenu()">&#9776;</div>
 
         <div class="logo">
-            <img src="img/logo.png" alt="Logo">
-            <span>ZAPATINET</span>
-            <small>Moda y Sneakers</small>
+            <img src="img/logo.png" alt="">
+            <h1>MiTienda</h1>
+            <span>Tecnología & Servicios</span>
         </div>
 
-        <div class="cart-icon">🛒</div>
+        <div class="cart-btn">🛒</div>
     </header>
 
-    <!-- Barra de búsqueda -->
-    <div class="search-bar">
+    <!-- MENÚ LATERAL -->
+    <aside id="sidebar">
+        <h2>Menú</h2>
+        <a href="index.html">Inicio</a>
+        <a href="categorias.html">Categorías</a>
+        <a href="#">Ofertas</a>
+        <a href="#">Contacto</a>
+        <a href="#">Carrito</a>
+    </aside>
+
+    <!-- BUSCADOR -->
+    <section class="search-section">
         <select>
             <option>Todos</option>
-            <option>Nike</option>
-            <option>Jordan</option>
-            <option>Adidas</option>
+            <option>Cuentas</option>
+            <option>Software</option>
+            <option>Suscripciones</option>
         </select>
+        <input type="text" placeholder="Buscar…">
+        <button class="search-btn">Buscar</button>
+    </section>
 
-        <input type="text" placeholder="Buscar...">
-        <button>🔍</button>
-    </div>
+    <!-- BANNER -->
+    <section class="banner azul">
+        <h2>PRODUCTOS DESTACADOS</h2>
+        <p>Ofertas especiales y servicios premium</p>
 
-    <!-- Banner de categoría -->
-    <div class="banner">
-        <h1>ZAPATILLAS POR MAYOR</h1>
-        <button class="filter-btn">FILTRAR</button>
-        <div class="sort">
-            <label>Ordenar por precio:</label>
+        <div class="sort-container">
+            <label>Ordenar por:</label>
             <select>
-                <option>Bajo a alto</option>
-                <option>Alto a bajo</option>
+                <option>Precio (bajo a alto)</option>
+                <option>Precio (alto a bajo)</option>
             </select>
         </div>
-    </div>
-
-    <!-- Texto introductorio -->
-    <section class="intro">
-        <p>
-            ESTA ÁREA ES EXCLUSIVA PARA DISTRIBUIDORES DE ZAPATILLAS CALIDAD AAA, 1:1 Y PREMIUM.
-        </p>
     </section>
 
-    <!-- Grid de productos -->
-    <section class="productos">
-        <div class="producto">
-            <img src="img/airforce-blanca.jpg" alt="Air Force Blanca">
-            <h3>Nike Air Force 1 Blanca</h3>
-            <p>Calidad AAA</p>
-            <span class="precio">S/ 140</span>
+    <!-- PRODUCTOS DESTACADOS -->
+    <section class="productos-grid">
+        <div class="producto-card">
+            <img src="img/producto.png">
+            <h3>Cuenta Netflix 4K</h3>
+            <p>Entrega automática</p>
+            <span class="precio">S/ 18</span>
+            <a class="btn" href="producto.html">Ver producto</a>
         </div>
 
-        <div class="producto">
-            <img src="img/jordan4.jpg" alt="Jordan 4 Oreo">
-            <h3>Jordan 4 Oreo</h3>
-            <p>Top Quality</p>
-            <span class="precio">S/ 165</span>
+        <div class="producto-card">
+            <img src="img/producto.png">
+            <h3>ChatGPT Premium</h3>
+            <p>Suscripción mensual</p>
+            <span class="precio">S/ 20</span>
+            <a class="btn" href="producto.html">Ver producto</a>
         </div>
 
-        <div class="producto">
-            <img src="img/dunkpanda.jpg" alt="Dunk Panda">
-            <h3>Nike Dunk Panda</h3>
-            <p>1:1 Perfect</p>
-            <span class="precio">S/ 150</span>
-        </div>
-
-        <div class="producto">
-            <img src="img/adidas-campus.jpg" alt="Campus">
-            <h3>Adidas Campus</h3>
-            <p>Premium 1:1</p>
-            <span class="precio">S/ 155</span>
+        <div class="producto-card">
+            <img src="img/producto.png">
+            <h3>Correo Outlook</h3>
+            <p>Entrega inmediata</p>
+            <span class="precio">S/ 12</span>
+            <a class="btn" href="producto.html">Ver producto</a>
         </div>
     </section>
 
-    <!-- Botón flotante WhatsApp -->
-    <a class="whatsapp-btn" href="https://wa.me/51900000000">
-        💬 WhatsApp
+    <!-- WHATSAPP -->
+    <a href="https://wa.me/51900000000" class="whatsapp">
+        💬
     </a>
 
+    <!-- FOOTER -->
     <footer>
-        © 2025 ZAPATINET | Distribuidores de Sneakers
+        © 2025 MiTienda Premium – Todos los derechos reservados
     </footer>
 
-    <script src="script.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
