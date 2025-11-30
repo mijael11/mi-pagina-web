@@ -3,195 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Tienda</title>
+    <title>Mi Tienda Online</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header class="header">
-        <h1>Mi Tienda Online</h1>
-        <p>Productos variados al mejor precio</p>
-    </header>
+<header class="header">
+    <h1>Mi Tienda Online</h1>
+    <p>Productos variados al mejor precio</p>
+</header>
 
-    <!-- GRID DE PRODUCTOS -->
-    <section class="productos">
-        <h2>Productos en venta</h2>
+<!-- TABS -->
+<div class="tabs">
+    <button class="tab-button active" onclick="openTab('individual')">Compras individuales</button>
+    <button class="tab-button" onclick="openTab('combos')">Combos con descuento</button>
+    <button class="tab-button" onclick="openTab('personalizado')">Pedidos personalizados</button>
+</div>
 
-        <div class="grid">
+<!-- TAB 1: INDIVIDUAL -->
+<section id="individual" class="tab-content active">
+    <h2>Productos individuales</h2>
 
-            <!-- 14 PRODUCTOS IGUALES -->
-            <!-- Puedes duplicar o cambiar cualquiera después -->
+    <div class="grid">
 
-            <!-- PRODUCTO 1 -->
-            <!-- Usa producto.png como imagen -->
-            <!-- Cambia el nombre o precio cuando quieras -->
-            <!-- Repite para los 14 -->
+        <!-- 14 productos iguales -->
+        <!-- Puedes cambiar nombres y precios cuando quieras -->
 
-            <!-- Se generan automáticamente con un bucle manual -->
+        <!-- Se generaron 14 cards -->
+        <!-- Producto i -->
 
-            <!-- Generación de los 14 productos -->
-            <!-- PRODUCTOS -->
-            <!-- Voy a generar 14 cards con mismo contenido -->
-
-            <!-- Producto Loop -->
-            <!-- Producto 1 al 14 -->
-            <!-- Basta duplicarlos si quieres más -->
-            <!-- Puedes editar nombres luego -->
-
-            <!-- PRODUCT CARD TEMPLATE -->
-            <!-- (Solo cambia el nombre DETRÁS si quieres) -->
-            <!-- Empieza el bloque de 14 -->
-
-            <!-- Product 1 -->
-            <div class="card">
-                <img src="producto.png" alt="Producto">
-                <h3>Producto 1</h3>
-                <p class="precio">S/ 239.00</p>
-                <button onclick="window.location.href='https://wa.me/51999999999?text=Hola,%20estoy%20interesado%20en%20el%20Producto%201.'">
-                    Comprar por WhatsApp
-                </button>
-            </div>
-
-            <!-- Product 2 -->
-            <div class="card">
-                <img src="producto.png" alt="Producto">
-                <h3>Producto 2</h3>
-                <p class="precio">S/ 239.00</p>
-                <button onclick="window.location.href='https://wa.me/51999999999?text=Hola,%20estoy%20interesado%20en%20el%20Producto%202.'">
-                    Comprar por WhatsApp
-                </button>
-            </div>
-
-            <!-- Product 3 -->
-            <div class="card">
-                <img src="producto.png" alt="Producto">
-                <h3>Producto 3</h3>
-                <p class="precio">S/ 239.00</p>
-                <button onclick="window.location.href='https://wa.me/51999999999?text=Hola,%20estoy%20interesado%20en%20el%20Producto%203.'">
-                    Comprar por WhatsApp
-                </button>
-            </div>
-
-            <!-- Y así hasta el 14 -->
-
-            <!-- Product 4 -->
-            <div class="card">
-                <img src="producto.png" alt="Producto">
-                <h3>Producto 4</h3>
-                <p class="precio">S/ 239.00</p>
-                <button onclick="window.location.href='https://wa.me/51999999999?text=Hola,%20estoy%20interesado%20en%20el%20Producto%204.'">
-                    Comprar por WhatsApp
-                </button>
-            </div>
-
-            <!-- Product 5 -->
-            <div class="card">
-                <img src="producto.png" alt="Producto">
-                <h3>Producto 5</h3>
-                <p class="precio">S/ 239.00</p>
-                <button onclick="window.location.href='https://wa.me/51999999999?text=Hola,%20estoy%20interesado%20en%20el%20Producto%205.'">
-                    Comprar por WhatsApp
-                </button>
-            </div>
-
-            <!-- Product 6 -->
-            <div class="card">
-                <img src="producto.png" alt="Producto">
-                <h3>Producto 6</h3>
-                <p class="precio">S/ 239.00</p>
-                <button onclick="window.location.href='https://wa.me/51999999999?text=Hola,%20estoy%20interesado%20en%20el%20Producto%206.'">
-                    Comprar por WhatsApp
-                </button>
-            </div>
-
-            <!-- Product 7 -->
-            <div class="card">
-                <img src="producto.png" alt="Producto">
-                <h3>Producto 7</h3>
-                <p class="precio">S/ 239.00</p>
-                <button onclick="window.location.href='https://wa.me/51999999999?text=Hola,%20estoy%20interesado%20en%20el%20Producto%207.'">
-                    Comprar por WhatsApp
-                </button>
-            </div>
-
-            <!-- Product 8 -->
-            <div class="card">
-                <img src="producto.png" alt="Producto">
-                <h3>Producto 8</h3>
-                <p class="precio">S/ 239.00</p>
-                <button onclick="window.location.href='https://wa.me/51999999999?text=Hola,%20estoy%20interesado%20en%20el%20Producto%208.'">
-                    Comprar por WhatsApp
-                </button>
-            </div>
-
-            <!-- Product 9 -->
-            <div class="card">
-                <img src="producto.png" alt="Producto">
-                <h3>Producto 9</h3>
-                <p class="precio">S/ 239.00</p>
-                <button onclick="window.location.href='https://wa.me/51999999999?text=Hola,%20estoy%20interesado%20en%20el%20Producto%209.'">
-                    Comprar por WhatsApp
-                </button>
-            </div>
-
-            <!-- Product 10 -->
-            <div class="card">
-                <img src="producto.png" alt="Producto">
-                <h3>Producto 10</h3>
-                <p class="precio">S/ 239.00</p>
-                <button onclick="window.location.href='https://wa.me/51999999999?text=Hola,%20estoy%20interesado%20en%20el%20Producto%2010.'">
-                    Comprar por WhatsApp
-                </button>
-            </div>
-
-            <!-- Product 11 -->
-            <div class="card">
-                <img src="producto.png" alt="Producto">
-                <h3>Producto 11</h3>
-                <p class="precio">S/ 239.00</p>
-                <button onclick="window.location.href='https://wa.me/51999999999?text=Hola,%20estoy%20interesado%20en%20el%20Producto%2011.'">
-                    Comprar por WhatsApp
-                </button>
-            </div>
-
-            <!-- Product 12 -->
-            <div class="card">
-                <img src="producto.png" alt="Producto">
-                <h3>Producto 12</h3>
-                <p class="precio">S/ 239.00</p>
-                <button onclick="window.location.href='https://wa.me/51999999999?text=Hola,%20estoy%20interesado%20en%20el%20Producto%2012.'">
-                    Comprar por WhatsApp
-                </button>
-            </div>
-
-            <!-- Product 13 -->
-            <div class="card">
-                <img src="producto.png" alt="Producto">
-                <h3>Producto 13</h3>
-                <p class="precio">S/ 239.00</p>
-                <button onclick="window.location.href='https://wa.me/51999999999?text=Hola,%20estoy%20interesado%20en%20el%20Producto%2013.'">
-                    Comprar por WhatsApp
-                </button>
-            </div>
-
-            <!-- Product 14 -->
-            <div class="card">
-                <img src="producto.png" alt="Producto">
-                <h3>Producto 14</h3>
-                <p class="precio">S/ 239.00</p>
-                <button onclick="window.location.href='https://wa.me/51999999999?text=Hola,%20estoy%20interesado%20en%20el%20Producto%2014.'">
-                    Comprar por WhatsApp
-                </button>
-            </div>
-
+        <!-- 1 -->
+        <div class="card">
+            <img src="producto.png">
+            <h3>Producto 1</h3>
+            <p class="precio">S/ 239.00</p>
+            <button>Comprar</button>
         </div>
-    </section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        © 2025 Mi Tienda Online
-    </footer>
+        <!-- 2 -->
+        <div class="card">
+            <img src="producto.png">
+            <h3>Producto 2</h3>
+            <p class="precio">S/ 239.00</p>
+            <button>Comprar</button>
+        </div>
+
+        <!-- 3 -->
+        <div class="card">
+            <img src="producto.png">
+            <h3>Producto 3</h3>
+            <p class="precio">S/ 239.00</p>
+            <button>Comprar</button>
+        </div>
+
+        <!-- 4 -->
+        <div class="card">
+            <img src="producto.png">
+            <h3>Producto 4</h3>
+            <p class="precio">S/ 239.00</p>
+            <button>Comprar</button>
+        </div>
+
+        <!-- 5 -->
+        <div class="card">
+            <img src="producto.png">
+            <h3>Producto 5</h3>
+            <p class="precio">S/ 239.00</p>
+            <button>Comprar</button>
+        </div>
+
+        <!-- 6 -->
+        <div class="card">
+            <img src="producto.png">
+            <h3>Producto 6</h3>
+            <p class="precio">S/ 239.00</p>
+            <button>Comprar</button>
+        </div>
+
+        <!-- 7 -->
+        <div class="card">
+            <img src="producto.png">
+            <h3>Producto 7</h3>
+            <p class="precio">S/ 239.00</p>
+            <button>Comprar</button>
+        </div>
+
+        <!-- 8 -->
+        <div class="card">
+            <img src="producto.png">
+            <h3>Producto 8</h3>
+            <p class="precio">S/ 239.00</p>
+            <button>Comprar</button>
+        </div>
+
+        <!-- 9 -->
+        <div class="card">
+            <img src="producto.png">
+            <h3>Producto 9</h3>
+            <p class="precio">S/ 239.00</p>
+            <button>Comprar</button>
+        </div>
+
+        <!-- 10 -->
+        <div class="card">
+            <img src="producto.png">
+            <h3>Producto 10</h3>
+            <p class="precio">S/ 239.00</p>
+            <button>Comprar</button>
+        </div>
+
+        <!-- 11 -->
+        <div class="card">
+            <img src="producto.png">
+            <h3>Producto 11</h3>
+            <p class="precio">S/ 239.00</p>
+            <button>Comprar</button>
+        </div>
+
+        <!-- 12 -->
+        <div class="card">
+            <img src="producto.png">
+            <h3>Producto 12</h3>
+            <p class="precio">S/ 239.00</p>
+            <button>Comprar</button>
+        </div>
+
+        <!-- 13 -->
+        <div class="card">
+            <img src="producto.png">
+            <h3>Producto 13</h3>
+            <p class="precio">S/ 239.00</p>
+            <button>Comprar</button>
+        </div>
+
+        <!-- 14 -->
+        <div class="card">
+            <img src="producto.png">
+            <h3>Producto 14</h3>
+            <p class="precio">S/ 239.00</p>
+            <button>Comprar</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- TAB 2: COMBOS -->
+<section id="combos" class="tab-content">
+    <h2>Combos con descuento</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="producto.png">
+            <h3>Combo 2x1</h3>
+            <p class="precio">S/ 299.00</p>
+            <button>Comprar Combo</button>
+        </div>
+
+        <div class="card">
+            <img src="producto.png">
+            <h3>Combo 3 zapatillas</h3>
+            <p class="precio">S/ 399.00</p>
+            <button>Comprar Combo</button>
+        </div>
+
+        <div class="card">
+            <img src="producto.png">
+            <h3>Combo sorpresa</h3>
+            <p class="precio">S/ 199.00</p>
+            <button>Comprar Combo</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- TAB 3: PERSONALIZADO -->
+<section id="personalizado" class="tab-content">
+    <h2>Pedidos personalizados</h2>
+    <p>Pide un producto que no está en la tienda:</p>
+
+    <button class="personalizado-btn"
+        onclick="window.location.href='https://wa.me/51999999999?text=Hola,%20quiero%20hacer%20un%20pedido%20personalizado.'">
+        Escribir por WhatsApp
+    </button>
+</section>
+
+<footer class="footer">
+    © 2025 Mi Tienda Online
+</footer>
+
+<script>
+function openTab(tabName) {
+    document.querySelectorAll(".tab-button").forEach(btn => btn.classList.remove("active"));
+    document.querySelectorAll(".tab-content").forEach(tab => tab.classList.remove("active"));
+
+    event.target.classList.add("active");
+    document.getElementById(tabName).classList.add("active");
+}
+</script>
 
 </body>
 </html>
